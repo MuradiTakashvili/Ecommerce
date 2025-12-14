@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Listing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="promo" id="promo">Get 25% OFF on your first order. <a href="#">Order Now</a></div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <div class="brand">
+        <img class="brand__img" src="assets/icons/brand-logo.png" alt="Ecommerce logo" />
+        <div>Ecommerce</div>
+      </div>
+
+      <nav class="menu">
+        <a href="listing.html">Home</a>
+
+        <div class="catDrop">
+          <button class="catBtn" id="catBtn" type="button">Categories <span class="caret">▾</span></button>
+          <div class="dropMenu" id="catMenu">
+            <a href="#" data-cat="">All</a>
+            <a href="#" data-cat="T-shirt">T-shirt</a>
+            <a href="#" data-cat="Hoodie">Hoodie</a>
+          </div>
+        </div>
+
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="nav__right">
+        <div class="searchWrap">
+          <img class="searchIcon" src="assets/icons/search.png" alt="Search" />
+          <input id="search" class="search" placeholder="Search products" />
+        </div>
+
+        <button class="iconBtn" title="Cart" onclick="location.href='cart.html'">
+          <img class="iconImg" src="assets/icons/cart.png" alt="Cart" />
+        </button>
+
+        <button class="iconBtn" title="Account">
+          <img class="iconImg" src="assets/icons/account.png" alt="Account" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="breadcrumb">
+      <a href="#">Ecommerce</a><span class="sep">›</span><span>Search</span>
+    </div>
+
+    <section class="layout">
+      <aside class="cardBox sidebar">
+        <div class="sideTitle">Categories</div>
+        <div class="checkList">
+          <label class="chk"><input type="checkbox" class="cat" value="T-shirt"> T-shirt</label>
+          <label class="chk"><input type="checkbox" class="cat" value="Hoodie"> Hoodie</label>
+        </div>
+
+        <div class="sideTitle">Color</div>
+        <div class="colors" id="colorPicker">
+          <div class="dot dot--black" data-color="black"></div>
+          <div class="dot dot--white" data-color="white"></div>
+          <div class="dot dot--beige" data-color="brown"></div>
+          <div class="dot dot--green" data-color="green"></div>
+          <div class="dot dot--blue" data-color="blue"></div>
+        </div>
+
+        <div class="sideTitle">Size</div>
+        <div class="sizeRow" id="sizePicker">
+          <button class="pill" data-size="S" type="button">S</button>
+          <button class="pill" data-size="M" type="button">M</button>
+          <button class="pill" data-size="L" type="button">L</button>
+          <button class="pill" data-size="XL" type="button">XL</button>
+          <button class="pill" data-size="XXL" type="button">XXL</button>
+        </div>
+
+        <div class="sideTitle">Price</div>
+        <div class="rangeBox">
+          <div class="dualRange">
+            <div class="track"></div>
+            <div class="trackFill" id="trackFill"></div>
+            <input id="minRange" type="range" min="0" max="100" value="0" />
+            <input id="maxRange" type="range" min="0" max="100" value="100" />
+          </div>
+          <div class="priceVal">
+            <span id="minPriceVal">$0</span>
+            <span id="maxPriceVal">$100</span>
+          </div>
+        </div>
+      </aside>
+
+      <section>
+        <div class="mainTop">
+          <div class="applied">
+            <div class="appliedLabel">Applied Filters:</div>
+            <div class="tags" id="appliedTags"></div>
+          </div>
+
+          <div class="countSort">
+            <div class="count">Showing <span id="showCount">0</span> of <span id="totalCount">0</span> Results.</div>
+
+            <div class="sortWrap">
+              <button class="sortBtn" id="sortBtn" type="button">
+                <span id="sortBtnText">Sort by</span> <span class="caret">▾</span>
+              </button>
+              <div class="sortMenu" id="sortMenu">
+                <button type="button" data-sort="default">Sort by</button>
+                <button type="button" data-sort="price_asc">Price: Low to High</button>
+                <button type="button" data-sort="price_desc">Price: High to Low</button>
+                <button type="button" data-sort="name_asc">Name: A to Z</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="grid" class="grid"></div>
+        <div id="pagination" class="pager"></div>
+      </section>
+    </section>
+  </main>
+
+  <section class="news">
+    <div class="news__inner">
+      <div>
+        <div class="news__title">Join Our Newsletter</div>
+        <div class="news__sub">We love to surprise our subscribers with occasional gifts.</div>
+      </div>
+      <div class="news__form">
+        <input class="news__input" placeholder="Your email address" />
+        <button class="btn">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footBrand">
+        <div class="brand">
+          <img class="footerBrand__img" src="assets/icons/footer-brand-logo.png" alt="Ecommerce logo" />
+          <div>Ecommerce</div>
+        </div>
+        <p>DevCut is a YouTube channel for practical project-based learning.</p>
+
+        <div class="social">
+          <a class="socialBtn" href="#" aria-label="GitHub">
+            <img class="socialImg" src="assets/icons/github.png" alt="GitHub" />
+          </a>
+          <a class="socialBtn" href="#" aria-label="Instagram">
+            <img class="socialImg" src="assets/icons/instagram.png" alt="Instagram" />
+          </a>
+          <a class="socialBtn" href="#" aria-label="YouTube">
+            <img class="socialImg" src="assets/icons/youtube.png" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footCol">
+        <h4>SUPPORT</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footCol">
+        <h4>COMPANY</h4>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footCol">
+        <h4>SHOP</h4>
+        <a href="#">My Account</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2023 DevCut. All rights reserved.</span>
+      <div class="pay">
+        <span>ACCEPTED PAYMENTS</span>
+        <div class="payIcons">
+          <img class="payImg" src="assets/icons/amex.png" alt="AMEX" />
+          <img class="payImg" src="assets/icons/mastercard.png" alt="Mastercard" />
+          <img class="payImg" src="assets/icons/visa.png" alt="VISA" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="module" src="js/listing.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="promo">Get 25% OFF on your first order. <a href="#">Order Now</a></div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <div class="brand">
+        <img class="brand__img" src="assets/icons/brand-logo.png" alt="Ecommerce logo" />
+        <div>Ecommerce</div>
+      </div>
+
+      <nav class="menu">
+        <a href="listing.html">Home</a>
+
+        <div class="catDrop">
+          <button class="catBtn" id="catBtn" type="button">Categories <span class="caret">▾</span></button>
+          <div class="dropMenu" id="catMenu">
+            <a href="#" data-cat="">All</a>
+            <a href="#" data-cat="T-shirt">T-shirt</a>
+            <a href="#" data-cat="Hoodie">Hoodie</a>
+          </div>
+        </div>
+
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="nav__right">
+        <div class="searchWrap">
+          <img class="searchIcon" src="assets/icons/search.png" alt="Search" />
+          <input class="search" placeholder="Search products" />
+        </div>
+
+        <button class="iconBtn" onclick="location.href='cart.html'">
+          <img class="iconImg" src="assets/icons/cart.png" alt="Cart" />
+        </button>
+
+        <button class="iconBtn">
+          <img class="iconImg" src="assets/icons/account.png" alt="Account" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="breadcrumb">
+      <a href="#">Ecommerce</a><span class="sep">›</span><a href="listing.html">Listing</a><span class="sep">›</span><span>Product</span>
+    </div>
+
+    <section class="detailsWrap">
+      <div class="gallery">
+        <div class="gallery__big">
+          <img id="mainImg" alt="" />
+        </div>
+        <div class="gallery__dots">
+          <span class="smallDot is-active"></span>
+          <span class="smallDot"></span>
+          <span class="smallDot"></span>
+          <span class="smallDot"></span>
+        </div>
+      </div>
+
+      <aside class="pinfo">
+        <div class="pinfo__top">
+          <div>
+            <h1 class="pname" id="title"></h1>
+            <div class="rating">4.2 — 142 Reviews</div>
+          </div>
+          <div class="stock" id="stockPill">IN STOCK</div>
+        </div>
+
+        <div class="pprice" id="price"></div>
+
+        <div class="sectionLabel">AVAILABLE COLORS</div>
+        <div class="colorRow" id="colors"></div>
+
+        <div class="sectionLabel">SELECT SIZE</div>
+        <div class="sizeRow2" id="sizes"></div>
+
+        <div class="sectionLabel">QUANTITY</div>
+        <div class="qty">
+          <button class="qtyBtn" id="qtyMinus" type="button">-</button>
+          <div class="qtyVal" id="qty">1</div>
+          <button class="qtyBtn" id="qtyPlus" type="button">+</button>
+        </div>
+
+        <div class="actions">
+          <button class="btn btnWide" id="addToCart" type="button">Add to cart</button>
+          <button class="heart" type="button" title="Wishlist">♡</button>
+        </div>
+
+        <div class="shipNote">— FREE SHIPPING ON ORDERS $100+</div>
+      </aside>
+    </section>
+
+    <section class="tabs">
+      <div class="tabHead">
+        <button class="is-active" type="button">Details</button>
+        <button type="button">Reviews</button>
+      </div>
+      <div class="tabBody">
+        <div id="descText"></div>
+        <ul class="bullets">
+          <li>Premium Quality</li>
+          <li>Versatile Wardrobe Staple</li>
+          <li>Available in Various Sizes</li>
+          <li>Tailored Fit</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="maybe">
+      <h3>You might also like</h3>
+      <div class="grid" id="relatedGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footBrand">
+        <div class="brand">
+          <img class="footerBrand__img" src="assets/icons/footer-brand-logo.png" alt="Ecommerce logo" />
+          <div>Ecommerce</div>
+        </div>
+        <p>DevCut is a YouTube channel for practical project-based learning.</p>
+
+        <div class="social">
+          <a class="socialBtn" href="#" aria-label="GitHub"><img class="socialImg" src="assets/icons/github.png" alt="GitHub" /></a>
+          <a class="socialBtn" href="#" aria-label="Instagram"><img class="socialImg" src="assets/icons/instagram.png" alt="Instagram" /></a>
+          <a class="socialBtn" href="#" aria-label="YouTube"><img class="socialImg" src="assets/icons/youtube.png" alt="YouTube" /></a>
+        </div>
+      </div>
+
+      <div class="footCol">
+        <h4>SUPPORT</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footCol">
+        <h4>COMPANY</h4>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footCol">
+        <h4>SHOP</h4>
+        <a href="#">My Account</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2023 DevCut. All rights reserved.</span>
+      <div class="pay">
+        <span>ACCEPTED PAYMENTS</span>
+        <div class="payIcons">
+          <img class="payImg" src="assets/icons/amex.png" alt="AMEX" />
+          <img class="payImg" src="assets/icons/mastercard.png" alt="Mastercard" />
+          <img class="payImg" src="assets/icons/visa.png" alt="VISA" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="module" src="js/details.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="promo">Get 25% OFF on your first order. <a href="#">Order Now</a></div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <div class="brand">
+        <img class="brand__img" src="assets/icons/brand-logo.png" alt="Ecommerce logo" />
+        <div>Ecommerce</div>
+      </div>
+
+      <nav class="menu">
+        <a href="listing.html">Home</a>
+
+        <div class="catDrop">
+          <button class="catBtn" id="catBtn" type="button">Categories <span class="caret">▾</span></button>
+          <div class="dropMenu" id="catMenu">
+            <a href="#" data-cat="">All</a>
+            <a href="#" data-cat="T-shirt">T-shirt</a>
+            <a href="#" data-cat="Hoodie">Hoodie</a>
+          </div>
+        </div>
+
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="nav__right">
+        <div class="searchWrap">
+          <img class="searchIcon" src="assets/icons/search.png" alt="Search" />
+          <input class="search" placeholder="Search products" />
+        </div>
+
+        <button class="iconBtn" onclick="location.href='cart.html'">
+          <img class="iconImg" src="assets/icons/cart.png" alt="Cart" />
+        </button>
+
+        <button class="iconBtn">
+          <img class="iconImg" src="assets/icons/account.png" alt="Account" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2 class="hTitle">Checkout</h2>
+    <div class="breadcrumb">
+      <a href="#">Ecommerce</a><span class="sep">›</span><span>Checkout</span>
+    </div>
+
+    <section class="checkoutWrap">
+      <div class="formBox">
+        <h3 class="formTitle">Shipping Address</h3>
+
+        <div class="formGrid">
+          <div class="field span2">
+            <label>Street Address</label>
+            <input class="input" id="street" />
+          </div>
+
+          <div class="field">
+            <label>City</label>
+            <input class="input" id="city" />
+          </div>
+
+          <div class="field">
+            <label>State</label>
+            <input class="input" id="state" />
+          </div>
+
+          <div class="field">
+            <label>Zip Code</label>
+            <input class="input" id="zip" />
+          </div>
+
+          <div class="field">
+            <label>Country</label>
+            <input class="input" id="country" />
+          </div>
+
+          <div class="field">
+            <label>Email</label>
+            <input class="input" id="email" />
+          </div>
+
+          <div class="field">
+            <label>Full name</label>
+            <input class="input" id="fullName" />
+          </div>
+        </div>
+      </div>
+
+      <aside class="orderBox">
+        <div class="orderTop">
+          <div>
+            <div style="font-weight:900;">Your Order</div>
+            <div class="miniThumbs" id="miniThumbs" style="margin-top:10px;"></div>
+          </div>
+          <button class="editBtn" type="button" onclick="location.href='cart.html'">Edit Cart</button>
+        </div>
+
+        <div style="margin-top:14px;">
+          <div class="sumRow muted"><span>Subtotal:</span><span id="subtotal">$ 0.00</span></div>
+          <div class="sumRow muted"><span>Shipping:</span><span>Free</span></div>
+          <div class="sumRow muted"><span>Tax:</span><span id="tax">$ 0.00</span></div>
+          <div class="sumLine"></div>
+          <div class="sumTotal"><span>Total</span><span id="total">$ 0.00</span></div>
+        </div>
+
+        <button class="btn placeBtn" id="placeOrder" type="button">Place Order</button>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footBrand">
+        <div class="brand">
+          <img class="footerBrand__img" src="assets/icons/footer-brand-logo.png" alt="Ecommerce logo" />
+          <div>Ecommerce</div>
+        </div>
+        <p>DevCut is a YouTube channel for practical project-based learning.</p>
+
+        <div class="social">
+          <a class="socialBtn" href="#" aria-label="GitHub"><img class="socialImg" src="assets/icons/github.png" alt="GitHub" /></a>
+          <a class="socialBtn" href="#" aria-label="Instagram"><img class="socialImg" src="assets/icons/instagram.png" alt="Instagram" /></a>
+          <a class="socialBtn" href="#" aria-label="YouTube"><img class="socialImg" src="assets/icons/youtube.png" alt="YouTube" /></a>
+        </div>
+      </div>
+
+      <div class="footCol">
+        <h4>SUPPORT</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footCol">
+        <h4>COMPANY</h4>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footCol">
+        <h4>SHOP</h4>
+        <a href="#">My Account</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2023 DevCut. All rights reserved.</span>
+      <div class="pay">
+        <span>ACCEPTED PAYMENTS</span>
+        <div class="payIcons">
+          <img class="payImg" src="assets/icons/amex.png" alt="AMEX" />
+          <img class="payImg" src="assets/icons/mastercard.png" alt="Mastercard" />
+          <img class="payImg" src="assets/icons/visa.png" alt="VISA" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="module" src="js/checkout.js"></script>
+</body>
+</html>

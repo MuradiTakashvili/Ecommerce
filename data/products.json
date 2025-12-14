@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Monochrome Tees",
+    "price": 35,
+    "category": "T-shirt",
+    "colors": ["blue", "white", "black"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-1.png"],
+    "description": "Classic everyday tee."
+  },
+  {
+    "id": 2,
+    "title": "Monochromatic Wardrobe",
+    "price": 27,
+    "category": "T-shirt",
+    "colors": ["brown", "black", "white"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-2.png"],
+    "description": "Graphic tee."
+  },
+  {
+    "id": 3,
+    "title": "Essential Neutrals",
+    "price": 22,
+    "category": "T-shirt",
+    "colors": ["white", "black"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-3.png"],
+    "description": "Neutral essential."
+  },
+  {
+    "id": 4,
+    "title": "UTRANET Black",
+    "price": 43,
+    "category": "T-shirt",
+    "colors": ["black"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-4.png"],
+    "description": "Black tee with logo."
+  },
+  {
+    "id": 5,
+    "title": "Sleek and Cozy Black",
+    "price": 67,
+    "category": "Hoodie",
+    "colors": ["black"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-5.png"],
+    "description": "Black hoodie."
+  },
+  {
+    "id": 6,
+    "title": "Raw Black Tees",
+    "price": 19,
+    "category": "T-shirt",
+    "colors": ["black"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-6.png"],
+    "description": "Minimal black tee."
+  },
+  {
+    "id": 7,
+    "title": "MOCKUP Black",
+    "price": 30,
+    "category": "T-shirt",
+    "colors": ["black"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-7.png"],
+    "description": "Mockup style tee."
+  },
+  {
+    "id": 8,
+    "title": "Athletic Shirt",
+    "price": 25,
+    "category": "T-shirt",
+    "colors": ["white"],
+    "sizes": ["S","M","L","XL","XXL"],
+    "stock": true,
+    "images": ["assets/products/shirt-8.png"],
+    "description": "Athletic white tee."
+  }
+]
